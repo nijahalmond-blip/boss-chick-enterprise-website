@@ -147,8 +147,8 @@ const Contact = () => {
                     { icon: MapPin, title: "Location", text: "Fort Washington, Maryland\nServing the DMV Area" },
                     { icon: Mail, title: "Email", text: "info@bosschickenterprise.com", href: "mailto:info@bosschickenterprise.com" },
                     { icon: Phone, title: "Phone", text: "(202) 571-8158", href: "tel:+12025718158" },
-                  ].map((item, i) => (
-                    <ScrollSection key={i} delay={i * 100} direction="left">
+                  ].map((item, i) => {
+                    const content = (
                       <div className="flex items-start gap-4 group hover-lift">
                         <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center shrink-0 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                           <item.icon className="text-primary" size={20} />
@@ -156,16 +156,27 @@ const Contact = () => {
                         <div>
                           <p className="font-semibold group-hover:text-primary transition-colors">{item.title}</p>
                           {item.href ? (
-                            <a href={item.href} className="text-muted-foreground hover:text-primary text-sm whitespace-pre-line transition-colors break-all">
+                            <span className="text-muted-foreground group-hover:text-primary text-sm whitespace-pre-line transition-colors break-all">
                               {item.text}
-                            </a>
+                            </span>
                           ) : (
                             <p className="text-muted-foreground text-sm whitespace-pre-line">{item.text}</p>
                           )}
                         </div>
                       </div>
-                    </ScrollSection>
-                  ))}
+                    );
+                    return (
+                      <ScrollSection key={i} delay={i * 100} direction="left">
+                        {item.href ? (
+                          <a href={item.href} className="block -m-2 p-2 rounded-lg">
+                            {content}
+                          </a>
+                        ) : (
+                          content
+                        )}
+                      </ScrollSection>
+                    );
+                  })}
                 </div>
                 <div>
                   <p className="font-semibold mb-3">Follow Us</p>

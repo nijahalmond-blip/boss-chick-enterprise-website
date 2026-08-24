@@ -48,9 +48,9 @@ const About = () => {
               <div>
                 <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>Boss Chick Enterprises LLC was born from a shared passion for celebration and creativity. As a mother-daughter team based in Fort Washington, Maryland, we saw an opportunity to bring something fresh, fun, and elevated to the DMV event scene.</p>
-                  <p>We started with a simple belief: events should feel unforgettable, not just look good on paper. That meant investing in premium equipment, perfecting our setup process, and bringing real energy and personality to every event.</p>
-                  <p>Today, with <span className="text-primary font-semibold">over 4 years of experience</span> and <span className="text-primary font-semibold">200+ events</span> under our belt, we serve weddings, birthdays, corporate events, baby showers, graduations, and everything in between. Whether it's a 360 booth spinning magic or an audio guestbook capturing heartfelt messages, we bring heart, hustle, and a whole lot of fun to every celebration we touch.</p>
+                  <p>Boss Chick Enterprises LLC started with Nijah and her mom, Tonya, and a shared love of throwing a good party. Based in Fort Washington, Maryland, we saw room to bring something different to the DMV event scene.</p>
+                  <p>We invested in real equipment early and built a setup process we run the same way every time, so the event stays on schedule and actually feels fun instead of managed.</p>
+                  <p>Today, that's <span className="text-primary font-semibold">over 4 years of experience</span> and <span className="text-primary font-semibold">200+ events</span> — weddings, birthdays, corporate events, baby showers, graduations, and everything in between. A 360 booth spinning or an audio guestbook filling up with real voices: same team, same heart, hustle, and a whole lot of fun behind it.</p>
                 </div>
               </div>
             </ScrollSection>

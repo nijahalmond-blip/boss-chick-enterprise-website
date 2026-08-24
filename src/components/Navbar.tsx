@@ -9,6 +9,7 @@ const navLinks = [
   { label: "About", path: "/about" },
   { label: "Services", path: "/services" },
   { label: "Gallery", path: "/gallery" },
+  { label: "Blog", path: "/blog" },
   { label: "FAQ", path: "/faq" },
   { label: "Contact", path: "/contact" },
 ];
@@ -63,7 +64,7 @@ const Navbar = () => {
         </div>
 
         <button
-          className="md:hidden text-foreground hover:text-primary transition-colors"
+          className="md:hidden -mr-2 p-3 text-foreground hover:text-primary transition-colors"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >

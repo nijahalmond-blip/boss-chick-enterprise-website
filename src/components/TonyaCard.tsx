@@ -24,6 +24,12 @@ const TonyaCard = ({ variant = "full" }: TonyaCardProps) => {
           >
             <Phone size={13} /> (202) 571-8158
           </a>
+          <a
+            href="tel:+12408826735"
+            className="inline-flex items-center gap-1.5 mt-1 text-sm text-primary hover:text-primary/80 transition-colors font-semibold"
+          >
+            <Phone size={13} /> (240) 882-6735 (direct)
+          </a>
         </div>
       </div>
     );
@@ -56,6 +62,12 @@ const TonyaCard = ({ variant = "full" }: TonyaCardProps) => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
             >
               <Phone size={14} /> (202) 571-8158
+            </a>
+            <a
+              href="tel:+12408826735"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+            >
+              <Phone size={14} /> (240) 882-6735
             </a>
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent text-accent-foreground">
               <Mail size={14} className="text-primary" /> Inquiries & Bookings
